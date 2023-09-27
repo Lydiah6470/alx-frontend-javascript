@@ -9,7 +9,7 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
       result.push({
         status,
         value: status === 'rejected' ? reason.toString() : value,
-      })
+      });
     ));
     return result;
   });
